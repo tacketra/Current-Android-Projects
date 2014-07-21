@@ -1,0 +1,128 @@
+<LinearLayout
+	   xmlns:android="http://schemas.android.com/apk/res/android" 
+       xmlns:tools="http://schemas.android.com/tools"
+       android:id="@+id/linearSettingsVertical"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center|left"
+       android:orientation="vertical">
+     
+   <LinearLayout
+        android:id="@+id/linearSettingsHorizontalTextAboveWheels"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textHoursAboveWheel"
+            android:layout_marginLeft="30dip"
+            android:layout_marginRight="15dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hours"/>
+        <TextView
+            android:id="@+id/textMinutesAboveWheel"
+            android:layout_marginLeft="16dip"
+            android:layout_marginRight="15dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Minutes"/>
+        <TextView
+            android:id="@+id/textDurationAboveWheel"
+            android:layout_marginLeft="93dip"
+            android:layout_marginRight="15dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Duration"/>
+        </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/linearSettingsHorizontalWheels"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:orientation="horizontal">
+	   <TimePicker
+	       android:id="@+id/timeWheel"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content" />
+	    
+	   <NumberPicker
+		    android:id="@+id/wheel_duration"
+		    android:layout_width="70dp"
+		    android:layout_height="130dp"
+		    android:orientation="horizontal" />
+	    </LinearLayout>
+
+
+ 	
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+	   <Button
+	        android:id="@+id/button_monday"
+	        android:textSize="16dip"
+	        android:text="Mo" 
+	        android:layout_width="47dip"
+	        android:layout_height="wrap_content"/>
+	   <Button
+	        android:id="@+id/button_tuesday"
+	        android:textSize="16dip"
+	        android:text="Tu" 
+	        android:layout_width="47dip"
+	        android:layout_height="wrap_content"/>
+	   <Button
+	        android:id="@+id/button_wednesday"
+	        android:textSize="16dip"
+	        android:text="We" 
+	        android:layout_width="47dip"
+	        android:layout_height="wrap_content"/>
+	   <Button
+	        android:id="@+id/button_thursday"
+	        android:textSize="16dip"
+	        android:text="Th" 
+	        android:layout_width="47dip"
+	        android:layout_height="wrap_content"/>	
+	   <Button
+	        android:id="@+id/button_friday"
+	        android:textSize="16dip"
+	        android:text="Fr" 
+	        android:layout_width="47dip"
+	        android:layout_height="wrap_content"/>
+	   <Button
+	        android:id="@+id/button_saturday"
+	        android:text="Sa" 
+	        android:textSize="16dip"
+	        android:layout_width="47dip"
+	        android:layout_height="wrap_content"/>
+	   <Button
+	        android:id="@+id/button_sunday"
+	        android:textSize="16dip"
+	        android:text="Su" 
+	        android:layout_width="47dip"
+	        android:layout_height="wrap_content"  />		    
+	        </LinearLayout>
+
+	   <LinearLayout
+	        android:id="@+id/linearlayoutfordeletealarmbutton"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:orientation="vertical">
+		   <Button
+		        android:id="@+id/delete_alarm"
+		        android:text="Delete this alarm" 
+		        android:layout_marginTop="50dp"
+		        android:onClick="deleteCurrentAlarm"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"  />
+	   </LinearLayout>
+
+	  
+     
+</LinearLayout>
+
+
+
